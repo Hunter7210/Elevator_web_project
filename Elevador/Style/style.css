@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.containerPrinc {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 71);
+}
+
+
+.container-backgroud {
+    width: 55%;
+    height: 90vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    
+    /*  background-image: url(); */
+}
+
+.container-contain-floors {
+    display: grid;
+    grid-template-rows: repeat(9, 10vh);
+
+    background-color: aliceblue;
+    width: 55%;
+    height: 90vh;
+    position: relative;
+    z-index: 0;
+    
+}
+
+/* Controle para chamar elevador */
+.control-buscar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    width: 10%;
+    height: 22vh;
+
+    background-color: gray;
+}
+
+.display-elevador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height:5vh;
+    background-color: yellow;
+}
+
+.btn-chamar {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bt-chama-up img {
+    width: 100%;
+    height: 6vh;
+
+}
+
+.btn-chama-down img {
+    width: 100%;
+    height: 6vh;
+
+}
+
+.contain-elevador{
+    position: relative;
+    z-index: 5;
+}
+
+.contain-elevador img{
+    height: 8vh;
+    position: relative;
+    z-index: 5;
+}
+
+
+.floor-L6 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+
+}
+
+.floor-L5 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
+
+.floor-L4 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
+
+.floor-L3 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
+
+.floor-L2 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
+
+.floor-L1 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
+
+.floor-T {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
+
+.floor-S1 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
+
+.floor-S2 {
+    width: 100%;
+    height: 8vh;
+    background-color: red;
+}
