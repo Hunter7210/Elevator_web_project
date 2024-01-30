@@ -84,20 +84,26 @@ body {
 
 .contain-elevador{
     position: relative;
-    z-index: 5;
+    z-index: 1;
 }
 
 .contain-elevador img{
     height: 8vh;
-    position: relative;
-    z-index: 5;
+    z-index: 2;
+}
+
+.contain-elevador-2 img{
+    height: 8vh;
+    z-index: 2;
 }
 
 
 .floor-L6 {
     width: 100%;
     height: 8vh;
+    position: relative;
     background-color: red;
+    z-index: -1;
 
 }
 
@@ -147,4 +153,9 @@ body {
     width: 100%;
     height: 8vh;
     background-color: red;
+}
+
+.elevator {
+    display: flex;
+    justify-content: space-around;
 }

@@ -12,153 +12,52 @@
     <div class="containerPrinc">
         <div class="container-backgroud">
             <div class="container-contain-floors">
-                <div class="contain-elevador">
-                    <img src="../img/elevador.png" alt="">
-                </div>
-                <div class="floor-L6">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>L6</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <img src="" alt="" class="btn-down">
-                        </div>
+                <div class="elevator">
+                    <div class="contain-elevador">
+                        <img src="../img/elevador.png" alt="">
                     </div>
-                </div>
 
-                <div class="floor-L5">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>L5</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                            <div class="btn-down">
-                                <img src="" alt="" class="btn-down">
-                            </div>
-                        </div>
+                    <div class="contain-elevador-2">
+                        <img src="../img/elevador.png" alt="">
                     </div>
+                </div>
+                <div class="floor-L6" >
+                </div>
+                <div class="floor-L5">
                 </div>
                 <div class="floor-L4">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>L4</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                            <div class="btn-down">
-                                <img src="" alt="" class="btn-down">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="floor-L3">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>L3</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                            <div class="btn-down">
-                                <img src="" alt="" class="btn-down">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="floor-L2">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>L2</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                            <div class="btn-down">
-                                <img src="" alt="" class="btn-down">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="floor-L1">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>L1</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                            <div class="btn-down">
-                                <img src="" alt="" class="btn-down">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="floor-T">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>T</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                            <div class="btn-down">
-                                <img src="" alt="" class="btn-down">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="floor-S1">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>S1</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                            <div class="btn-down">
-                                <img src="" alt="" class="btn-down">
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="floor-S2">
-                    <div class="control-busc">
-                        <div class="display-elev">
-                            <h1>S2</h1>
-                        </div>
-                        <div class="btn-cham">
-                            <div class="btn-up">
-                                <img src="" alt="" class="btn-up">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
+
             <div class="control-buscar">
                 <div class="display-elevador">
-                    <h1>L5</h1>
-                </div>
+                    <h1 class="num-floor"></h1>
+                </div>  
                 <div class="btn-chamar">
                     <div class="bt-chama-up">
-                        <img src="../img/seta-cima.png" alt="" class="btn-up">
+                      <input type="button" value="Up"><!-- <img src="../img/seta-cima.png" alt="" class="btn-up"> -->
                     </div>
                     <div class="btn-chama-down">
-                        <img src="../img/seta-baixo.png" alt="" class="btn-down">
+                        <input type="button" onClick=move_img('down') value="Down">
+                        <!-- <img src="../img/seta-baixo.png" alt="" class="btn-down"> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="../JavaScript/javascript.js"></script>
 
 </html>
