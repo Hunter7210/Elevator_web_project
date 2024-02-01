@@ -8,7 +8,7 @@ function alternarImagem() {
     const numeroElemento = document.getElementById('num-display');
     const numeroAndarElemento = document.getElementById('tex-andar-atual');
 
-    if (imagemAtual === ) {
+    if (imagemAtual === 1) {
 
         imagemElemento.src = '../img/ELevador1_N1.png';
         imagemElemento.alt = 'Imagem 2';
@@ -47,6 +47,7 @@ function elevador2() {
 
 
 
+
 function compararValores(numeroApertado, posicaoElevador1, posicaoElevador2) {
 
     if (numeroApertado > posicaoElevador1 && numeroApertado < posicaoElevador2) {
@@ -60,6 +61,6 @@ function compararValores(numeroApertado, posicaoElevador1, posicaoElevador2) {
 
 
 function definirEnvia() {
-
-    compararValores();
+    const numeroApertado = document.getElementById('btn');
+    compararValores(numeroApertado, );
 }
