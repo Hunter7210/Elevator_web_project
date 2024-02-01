@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-background">
+            <div class="container-text-andar-atu">
+                <h2>Andar atual: </h2>
+                <h2 id="tex-andar-atual"></h2>
+            </div>
+
+            <div class="container-troca-pre">
+                <img src="../img/Ambos_Terreo.png" alt="Terreo" id="imagem">
+                
+            </div>
+            <div class="container-painel">
+                <div class="container-display">
+                    <h2 name="display" id="num-display">T</h2>
+                </div>
+                <div class="container-btns">
+                    <button type="button" onclick="alternarImagem()">^</button>
+                    <button type="button">></button>
+                </div>
+            </div>
+
+
+
+            <!-- CRIAÇÃO DE UM PAINEL PARA ENTRAR NO ELEVADOR -->
+            <div class="container-elevador">
+                <div class="container-btn-elevador">
+                    <button type="button">Entrar no ELEVADOR</button>
+                </div>
+
+                <div class="cotainer-painel-elevador">
+                    <div class="container-display-elevador">
+                        <label for="">T</label>
+                    </div>
+                    <div class="container-btns-elevador">
+                        <button type="button">N6</button>
+                        <button type="button">N5</button>
+                        <button type="button">N4</button>
+                        <button type="button">N3</button>
+                        <button type="button">N2</button>
+                        <button type="button">N1</button>
+                        <button type="button">T</button>
+                        <button type="button">S1</button>
+                        <button type="button">S2</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../Script/script.js"></script>
+
+</html>
