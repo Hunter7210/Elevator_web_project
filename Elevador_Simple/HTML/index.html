@@ -11,15 +11,17 @@
 <body>
     <div class="container">
         <div class="container-background">
-            <div class="container-text-andar-atu">
-                <h2>Andar atual: </h2>
-                <h2 id="tex-andar-atual"></h2>
-            </div>
+            
+            <div class="container-conta-andar">
+                <div class="container-text-andar-atu">
+                    <h2>Andar atual: </h2>
+                    <h2 id="tex-andar-atual"></h2>
+                </div>
+                <div class="container-troca-pre">
+                    <img src="../img/ELevador1_N1.png" alt="Terreo" id="elevador1">
+                    <img src="../img/ELevador2_N1.png" alt="Terreo" id="elevador2">
 
-            <div class="container-troca-pre">
-                <img src="../img/ELevador1_N1.png" alt="Terreo" id="elevador1">
-                <img src="../img/ELevador2_N1.png" alt="Terreo" id="elevador2">
-
+                </div>
             </div>
             <div class="container-painel-control">
                 <div class="container-painel">
@@ -27,7 +29,7 @@
                         <h2 name="display" id="num-display">T</h2>
                     </div>
                     <div class="container-btns">
-                        <button type="button" id="btn" onclick="alternarImagem()" value="2">^</button>
+                        <button type="button" id="btn" >^</button>
                         <button type="button">></button>
                     </div>
                 </div>
@@ -37,24 +39,24 @@
 
             <!-- CRIAÇÃO DE UM PAINEL PARA ENTRAR NO ELEVADOR -->
             <div class="container-elevador">
-                <div class="container-btn-elevador">
+                <!--    <div class="container-btn-elevador">
                     <button type="button">Entrar no ELEVADOR</button>
-                </div>
+                </div> -->
 
                 <div class="cotainer-painel-elevador">
                     <div class="container-display-elevador">
                         <label for="">T</label>
                     </div>
                     <div class="container-btns-elevador">
-                        <button type="button">N6</button>
-                        <button type="button">N5</button>
-                        <button type="button">N4</button>
-                        <button type="button">N3</button>
-                        <button type="button">N2</button>
-                        <button type="button">N1</button>
-                        <button type="button">T</button>
-                        <button type="button">S1</button>
-                        <button type="button">S2</button>
+                        <button type="button" id="btn" onclick="alternarImagem()" value="2">N6</button>
+                        <button type="button" id="N5">N5</button>
+                        <button type="button" id="N4">N4</button>
+                        <button type="button" id="N3">N3</button>
+                        <button type="button" id="N2">N2</button>
+                        <button type="button" id="N1">N1</button>
+                        <button type="button" id="T">T</button>
+                        <button type="button" id="S1">S1</button>
+                        <button type="button" id="S2">S2</button>
                     </div>
                 </div>
             </div>

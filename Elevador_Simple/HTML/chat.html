@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elevadores Simulados</title>
     <style>
-        /* Estilos para os andares */
-        .andar {
-            width: 100px;
+        /* Estilos dos elementos */
+        .quadrado {
+            width: 50px;
             height: 50px;
-            background-color: #ccc;
-            margin: 10px;
-            text-align: center;
-            line-height: 50px;
+            background-color: #3498db;
+            margin: 5px;
+            display: inline-block;
+            position: relative;
         }
 
-        /* Estilos para os elevadores */
-        .container{
-            display: flex;
-            align-items: center;
-            jus 
-        }
-        .elevador {
-            width: 100px;
-            height: 50px;
-            background-image: url('url_do_frame_1.png'); /* Substitua pela URL do primeiro frame */
-            background-size: cover;
+        .circulo {
+            width: 30px;
+            height: 30px;
+            background-color: #ff0000;
+            border-radius: 50%;
             position: absolute;
-            transition: top 0.5s;
+            top: 10px;
+            left: 10px;
+        }
+
+        .botoes-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .botao {
+            margin-bottom: 5px;
+            padding: 5px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
-
 <body>
-    <div class="andar" onclick="moverElevador(0)">Térreo</div>
-    <div class="andar" onclick="moverElevador(1)">1º Andar</div>
-    <div class="andar" onclick="moverElevador(2)">2º Andar</div>
-    <!-- Adicione mais andares conforme necessário -->
+    <div class="botoes-container">
+        <button class="botao" onclick="moverCirculo()">1</button>
+        <!-- ... adicione mais botões aqui ... -->
+    </div>
 
-    <div class="container">
-    <div class="elevador" id="elevador1"></div>
-    <div class="elevador" id="elevador2"></div>
-</div>
-    <!-- Adicione mais elevadores conforme necessário -->
+    <div class="coluna">
+        <div class="quadrado">
+            <div class="circulo"></div>
+        </div>
+        <div class="quadrado">
+            <div class="circulo"></div>
+        </div>
+        <div class="quadrado">
+            <div class="circulo"></div>
+        </div>
+        <!-- ... adicione mais quadrados aqui ... -->
+    </div>
+
+    <!-- ... adicione mais colunas aqui ... -->
 
     <script>
-        let andarAtual1 = 0; // Elevador 1 começa no térreo
-        let andarAtual2 = 0; // Elevador 2 começa no térreo
+        // Função para mover o círculo para o quadrado acima
+        function moverCirculo() {
+            const circulo = document.querySelector('.circulo');
+            const quadrado = circulo.closest('.quadrado');
+            const quadradoAcima = quadrado.previousElementSibling;
 
-        function moverElevador(andarEscolhido) {
-            const elevador1 = document.getElementById('elevador1');
-            const elevador2 = document.getElementById('elevador2');
-            const alturaAndar = 60; // Altura de cada andar em pixels
-
-            // Calcula a posição do elevador 1 para o andar escolhido
-            const distancia1 = Math.abs(andarEscolhido - andarAtual1);
-            const novaPosicao1 = andarEscolhido * alturaAndar;
-            elevador1.style.top = novaPosicao1 + 'px';
-            andarAtual1 = andarEscolhido;
-
-            // Calcula a posição do elevador 2 para o andar escolhido
-            const distancia2 = Math.abs(andarEscolhido - andarAtual2);
-            const novaPosicao2 = andarEscolhido * alturaAndar;
-            elevador2.style.top = novaPosicao2 + 'px';
-            andarAtual2 = andarEscolhido;
-
-            // Determina qual elevador está mais próximo
-            if (distancia1 <= distancia2) {
-                console.log('Elevador 1 está mais próximo.');
-            } else {
-                console.log('Elevador 2 está mais próximo.');
+            if (quadradoAcima) {
+                quadradoAcima.appendChild(circulo);
             }
         }
     </script>
 </body>
-
 </html>
