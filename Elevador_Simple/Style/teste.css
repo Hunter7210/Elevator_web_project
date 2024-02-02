@@ -1,0 +1,15 @@
+/* Estilize o elevador e os andares conforme necessário */
+.elevador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.andar {
+    display: none;
+}
+
+/* Exiba o andar atual */
+#andar-0 {
+    display: block;
+}

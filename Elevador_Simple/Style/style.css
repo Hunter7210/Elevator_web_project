@@ -37,7 +37,7 @@ body {
 }
 
 .container-troca-pre img {
-    width: 80%;
+    width: 15%;
     height: 80vh;
 
 }
@@ -45,8 +45,12 @@ body {
 
 /* Style painel de comando */
 
+.container-painel-control{
+    display: none;    
+}
 
 .container-painel {
+
     width: 5%;
     height: 20vh;
 
@@ -84,7 +88,7 @@ body {
 /*  CRIANDO PAINEL PARA O ELEVADOR */
 
 .cotainer-painel-elevador {
-    width: 10%;
+    width: 90%;
     height: 25vh;
 
     display: flex;
@@ -100,16 +104,14 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 80%;
+    width: 90%;
     height: 5vh;
 
     background-color: yellow;
 }
 
 .container-btns-elevador {
-
-    
-    height: 12vh;
+    height: 20vh;
     width: 100%;
     display: grid;
     grid-template-columns: 49% 49%;
@@ -117,6 +119,6 @@ body {
     gap: 2px;
 }
 
-.container-elevador {
+/* .container-elevador {
     display: none;
-}
+} */
